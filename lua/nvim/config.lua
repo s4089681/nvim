@@ -1,4 +1,4 @@
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 vim.opt.number = true
 vim.opt.mouse = "a"
 vim.opt.showmode = false
@@ -22,3 +22,4 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 
 require("lualine").setup()
+require("mini.starter").setup()
