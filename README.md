@@ -9,4 +9,4 @@ To install the config, clone the repo to your config folder, typically `~/.confi
 git clone https://github.com/harrisonablack/nvim.git ~/.config/nvim && nvim
 ```
 ### Linters, LSP's, DSP's and formatters
-[mason.nvim](https://github.com/williamboman/mason.nvim) is used to manage those tools, and as such can be ran using `:Mason`
+[mason.nvim](https://github.com/williamboman/mason.nvim) is used to manage LSPs, linters etc and as such can be ran using `:Mason` 
