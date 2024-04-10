@@ -1,3 +1,7 @@
+require("lualine").setup()
+require("mini.starter").setup()
+require("which-key").setup()
+
 vim.g.have_nerd_font = true
 vim.opt.number = true
 vim.opt.mouse = "a"
@@ -21,5 +25,5 @@ vim.opt.hlsearch = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 
-require("lualine").setup()
-require("mini.starter").setup()
+vim.keymap.set("n", "<C-f>", "<Cmd>Ex<CR>")
+vim.keymap.set("n", "<C-k>", "<Cmd>WhichKey<CR>")
