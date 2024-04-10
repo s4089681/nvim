@@ -1,5 +1,5 @@
 return {
-{ -- Autocompletion
+	{ -- Autocompletion
 		"hrsh7th/nvim-cmp",
 		event = "InsertEnter",
 		dependencies = {
@@ -14,10 +14,10 @@ return {
 				end)(),
 				dependencies = {
 					{
-					   'rafamadriz/friendly-snippets',
-					    config = function()
-					    require('luasnip.loaders.from_vscode').lazy_load()
-					   end,
+						"rafamadriz/friendly-snippets",
+						config = function()
+							require("luasnip.loaders.from_vscode").lazy_load()
+						end,
 					},
 				},
 			},
@@ -42,7 +42,7 @@ return {
 					["<C-p>"] = cmp.mapping.select_prev_item(),
 					["<C-b>"] = cmp.mapping.scroll_docs(-4),
 					["<C-f>"] = cmp.mapping.scroll_docs(4),
-					["<CR>"] = cmp.mapping.confirm({ select = true }),
+					["<TAB>"] = cmp.mapping.confirm({ select = true }),
 					["<C-Space>"] = cmp.mapping.complete({}),
 					["<C-l>"] = cmp.mapping(function()
 						if luasnip.expand_or_locally_jumpable() then
@@ -54,7 +54,6 @@ return {
 							luasnip.jump(-1)
 						end
 					end, { "i", "s" }),
-
 				}),
 				sources = {
 					{ name = "nvim_lsp" },
@@ -65,4 +64,3 @@ return {
 		end,
 	},
 }
-
