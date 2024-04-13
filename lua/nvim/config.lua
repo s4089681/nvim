@@ -1,7 +1,3 @@
-require("lualine").setup()
-require("mini.starter").setup()
-require("which-key").setup()
-
 vim.g.have_nerd_font = true
 vim.opt.number = true
 vim.opt.mouse = "a"
@@ -24,6 +20,8 @@ vim.opt.scrolloff = 10
 vim.opt.hlsearch = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
+vim.o.laststatus = 3
+vim.opt.cmdheight = 0
 
 vim.keymap.set("n", "<C-k>", "<Cmd>WhichKey<CR>")
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
