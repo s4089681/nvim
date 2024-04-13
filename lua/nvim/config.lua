@@ -25,5 +25,5 @@ vim.opt.hlsearch = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 
-vim.keymap.set("n", "<C-f>", "<Cmd>Ex<CR>")
 vim.keymap.set("n", "<C-k>", "<Cmd>WhichKey<CR>")
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
