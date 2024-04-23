@@ -22,6 +22,12 @@ require("lazy").setup({
 
 -- Call plugin setup
 --require("lualine").setup()
-require("lualine").setup({ options = { theme = "palenight", globalstatus = true } })
-require("mini.starter").setup()
+require("lualine").setup({
+	options = { theme = "palenight" },
+	globalstatus = true,
+	disabled_filetypes = { "dashboard" },
+})
+--require("mini.starter").setup()
 require("which-key").setup()
+
+vim.cmd("Oil")
