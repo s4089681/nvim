@@ -25,6 +25,7 @@ vim.opt.cmdheight = 0
 
 vim.keymap.set("n", "<C-k>", "<Cmd>WhichKey<CR>")
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "<C-f>", "<Cmd>Oil<CR>")
 
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
