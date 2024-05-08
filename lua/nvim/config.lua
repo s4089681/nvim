@@ -22,6 +22,7 @@ vim.opt.hlsearch = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.o.laststatus = 3
+vim.o.termguicolors = true
 vim.opt.cmdheight = 0
 
 vim.keymap.set("n", "<C-k>", "<Cmd>WhichKey<CR>")
