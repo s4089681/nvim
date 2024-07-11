@@ -19,14 +19,3 @@ require("lazy").setup({
 		{ import = "nvim.plugins" },
 	},
 })
-
--- Call plugin setup
---require("lualine").setup()
-require("neodev").setup()
-require("lualine").setup({
-	options = { theme = "palenight" },
-	globalstatus = true,
-	disabled_filetypes = { "dashboard" },
-})
---require("mini.starter").setup()
-require("which-key").setup()
